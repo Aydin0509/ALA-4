@@ -1,197 +1,40 @@
-*{
-    margin: 0;
-    padding: 0;
+var fruit = ['Defcon1', 'Defcon2', 'Defcon3', 'Defcon4'];
+var index = 0; 
+var slideShowArray = ['defcon1', 'defcon2', 'defcon3', 'defcon4'];
+var test;
+
+window.onload = function(){
+    test = document.getElementById("test");
+
+    setInterval(slideShow, 2000);
 }
 
-@media only screen and (max-width: 600px){
-    #bigscreen {display: none;}
-    #mobile {display: block;}
+function slideShow(){ 
+    test.style.backgroundImage = "url(imgEvenementen/" + slideShowArray[index] + ".jpg)";
+    index++;
+    if(index == slideShowArray.length){
+        index = 0;
+    }
+} 
 
-
+function getArrayFor(){
+    for (var index = 0; index >= 0; index--){
+        test.innerHTML += fruit[index] + "<br>";
+    }
 }
 
-@media only screen and (min-width: 1025px) {
-   #bigscreen {display: block;}
-   #mobile {display: none;}
-   .topnav {
-    background-color: #333;
-    overflow: hidden;
+function getArrayForEach(){
+    test.innerHTML = null;
+    for(var character of fruit){
+        test.innerHTML += character + "<br>";
+    }
+}
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
   }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin-left: 10vw;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .pagina{
-      position: relative;
-      font-size: 5.5rem;
-      padding: 2%;
-      margin-left: 5vw;
-      margin-top: -100vh;
-  }
-
-  .wrapper{
-    position: absolute;
-    top: 550px;
-    left: -450px;
-    transform: translateY(-50%);
-    width: 100%;
-    padding: 0 20px;
-}
-.contact-form{
-    max-width: 550px;
-    margin: 0 auto;
-    background: rgba(0,0,0,0.8);
-    padding: 30px;
-    border-radius: 5px;
-    display: flex;
-    box-shadow: 0 0 10px rgba(0,0,0,0.13);
-}
-.input-fields{
-    display: flex;
-    flex-direction: column;
-    margin-right: 4%;
-}
-.input-fields,
-.msg{
-    width: 48%;
-}
-.input-fields .input,
-.msg textarea{
-    margin: 10px 0;
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid #ddd;
-    padding: 10px;
-    color: #ddd;
-    width: 90%;
-}
-
-.msg textarea{
-    height: 243px;
-}
-
-::-webkit-input-placeholder{
-    color: #ddd;
-}
-
-::-moz-input-placeholder{
-    color: #ddd;
-}
-
-::-ms-input-placeholder{
-    color: #ddd;
-}
-
-.btn{
-    background: #ddd;
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    color: black;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-.background{
-    opacity: 0.7;
-}
-
-.box{
-    position: relative;
-    margin-left: 65vw;
-    margin-top: 15vh;
-}
-
-.box .box1{
-    position: relative;
-    width: calc(400px - 30px);
-    height: calc(300px - 30px);
-    background: #000;
-    float: left;
-    margin: 15px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.box .box1 .icon{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ddd;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.box .box1:hover .icon{
-    top: 20px;
-    left: calc(50% - 40px);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-
-.box .box1 .icon .fa{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    transition: 0.5s;
-    color: black;
-}
-
-.box .box1:hover .icon .fa{
-    font-size: 40px;
-}
-
-.box .box1 .content{
-    position: absolute;
-    top: 100px;
-    height: calc(100% - 100px);
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: 0,5s;
-}
-
-.box .box1 .content h3{
-    margin: 0 0 10px;
-    padding: 0;
-    color: #fff;
-    font-size: 24px;
-    margin-left: 4.7vw;
-}
-
-.box .box1 .content p{
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    font-size: 16px;
-    margin-left: 4.7vw;
-}
-
-.logo{
-    position: absolute;
-    margin-left: 4vw;
-}
-}
