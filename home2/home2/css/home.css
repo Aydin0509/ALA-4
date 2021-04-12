@@ -1,0 +1,239 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media only screen and (max-width: 600px){
+    #bigscreen {display: none;}
+    #mobile {display: block;}
+    #groot {display: none;}
+    .telefoon {display: block;}
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .active {
+        background-color: black;
+        color: white;
+      }
+      .banner{
+          position: absolute;
+      }
+      .main-text{
+        position: absolute;
+        color: white;
+        text-align: center;
+        margin-left: 36vw;
+        margin-top: 10vh;
+        font-size: 30px ;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .sub-text{
+      position: absolute;
+      color: white;
+      text-align: center;
+      margin-left: 5vw;
+      margin-top: 20vh;
+      font-size: 30px ;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .titel{
+    position: absolute;
+    color: black;
+    text-align: center;
+    margin-left: 1vw;
+    margin-top: 40vh;
+    font-size: 30px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .text{
+        position: absolute;
+        color: #333;
+        text-align: center;
+        margin-left: 2vw;
+        margin-top: 55vh;
+        font-size: 15px ;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    .blikje3{
+        position: absolute;
+        margin-left: 15vw;
+        margin-top: 85vh; 
+        border-radius: 5px;
+    }
+    .blikje-text3{
+        position: absolute;
+        margin-left: 30vw;
+        margin-top: 80vh; 
+        color: red;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px ;       
+    }
+  
+      #footer{
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        height: 2vh;
+        margin-top: 120vh; 
+        text-align: center;
+        color: white;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+   #bigscreen {display: block;}
+   #mobile {display: none;}
+   #groot {display: block;}
+   .telefoon {display: none;}
+
+   .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 8vw;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #ddd;
+    color: black;
+  }
+  .banner{
+      position: absolute;
+  }
+  .main-text{
+      position: absolute;
+      color: white;
+      text-align: center;
+      margin-left: 42vw;
+      margin-top: 15vh;
+      font-size: 50px ;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .sub-text{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: 30vw;
+    margin-top: 39vh;
+    font-size: 50px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.titel{
+    position: absolute;
+    color: black;
+    text-align: center;
+    margin-left: 22vw;
+    margin-top: 70vh;
+    font-size: 50px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .text{
+        position: absolute;
+        color: #333;
+        text-align: center;
+        margin-left: 32vw;
+        margin-top: 85vh;
+        font-size: 20px ;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+  .logo{
+    position: absolute;
+    margin-left: 4vw;
+  }
+  .blikje1{
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: 120vh; 
+    border-radius: 5px;
+  }
+  .blikje-text1{
+    position: absolute;
+    margin-left: 74vw;
+    margin-top: 150vh;
+    color: aqua;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px ;
+  }
+  
+  .blikje2{
+    position: absolute;
+    margin-left: 40vw;
+    margin-top: 120vh; 
+    border-radius: 5px;
+}
+.blikje-text2{
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: 150vh;
+    color: rgb(255, 238, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px ;
+}
+  .blikje3{
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 120vh; 
+    border-radius: 5px;
+}
+.blikje-text3{
+    position: absolute;
+    margin-left: 14vw;
+    margin-top: 150vh; 
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px ;
+      
+}
+#footer{
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    height: 2vh;
+    margin-top: 160vh; 
+    text-align: center;
+    color: white;
+}
+  }
